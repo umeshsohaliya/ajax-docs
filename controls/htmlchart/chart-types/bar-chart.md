@@ -5,7 +5,7 @@ description: Bar Chart
 slug: htmlchart/chart-types/bar-chart
 tags: bar,chart
 published: True
-position: 2
+position: 1
 ---
 
 # Bar Chart

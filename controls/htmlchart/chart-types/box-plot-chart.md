@@ -5,7 +5,7 @@ description: Box Plot Chart
 slug: htmlchart/chart-types/box-plot-chart
 tags: box,plot,chart
 published: True
-position: 3
+position: 2
 ---
 
 # Box Plot Chart
