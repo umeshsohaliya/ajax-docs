@@ -10,7 +10,7 @@ position: 1
 
 # Select Item
 
-This help article showcases how to operate with the items of **RadRadioButtonList** on the server-side/client-side.
+This help article showcases how to operate with the items of a **RadRadioButtonList** on the server-side/client-side.
 
 * [Select Toggle State Server-Side](#select-toggle-state-server-side)
 
@@ -22,7 +22,7 @@ This help article showcases how to operate with the items of **RadRadioButtonLis
 
 ## Select Item Server-Side
 
-To select a particular item of **RadRadioButtonList** you should set the `Selected` property of the target item to `true`.
+To select a particular item of a **RadRadioButtonList**, you should set the `Selected` property of the target item to `true`.
 
 >caption Example 1: Select a RadioButtonListItem from the markup. 
 
@@ -35,7 +35,7 @@ To select a particular item of **RadRadioButtonList** you should set the `Select
 </telerik:RadRadioButtonList>
 ```` 
 
->caption Example 2: Select a ButtonToggleState from the code behind. 
+>caption Example 2: Select a ButtonToggleState from the code-behind. 
 
 ````C#
 protected void Page_Init(object sender, EventArgs e)
@@ -51,7 +51,7 @@ End Sub
 
 For a data-bound scenario you can use the `SelectedToggleStateIndex` of the control (**Example 3**).
 
->caption Example 3: Databind the selected state of a RadRadioButtonList.
+>caption Example 3: Data bind the selected state of a RadRadioButtonList.
 
 ````ASP.NET
 <telerik:RadGrid RenderMode="Lightweight" runat="server" ID="RadGrid1" Width="150px">
@@ -102,13 +102,13 @@ Public Sub Page_Init(sender As Object, e As System.EventArgs)
 End Sub
 ````
 
->warning The `SelectedToggleStateIndex` property will not take effect if directly assigned with a value in the markup. The `SelectedToggleStateIndex` property takes effect only when set from the code behind or integrated in a data-bound scenario in the markup (**Example 3**). 
+>warning The `SelectedToggleStateIndex` property will not take effect if directly assigned with a value in the markup. The `SelectedToggleStateIndex` property takes effect only when set from the code-behind or integrated in a data-bound scenario in the markup (**Example 3**). 
 
 ## Get Selected Toggle State Server-Side
 
 To get the selected toggle state and selected toggle state index you can use the `SelectedToggleState` and `SelectedToggleStateIndex` properties of the **RadRadioButtonList** control.
 
->caption Example 4: Get `SelectedToggleState` and `SelectedToggleStateIndex` of **RadRadioButtonList** from the code behind. 
+>caption Example 4: Get `SelectedToggleState` and `SelectedToggleStateIndex` of a **RadRadioButtonList** from the code-behind. 
 
 ````ASP.NET
 <telerik:RadRadioButtonList runat="server" ID="RadRadioButtonList1" OnToggleStateChanged="RadRadioButtonList1_ToggleStateChanged">
@@ -162,7 +162,7 @@ End Sub
 
 ## Select Toggle State Client-Side
 
-You can select a particular toggle state of **RadRadioButtonList** by passing the corresponding index in the `set_selectedToggleStateIndex()` method of the control.
+You can select a particular toggle state of a **RadRadioButtonList** by passing the corresponding index in the `set_selectedToggleStateIndex()` method of the control.
 
 >caption Example 6: Select a toggle state on the client-side.
 
@@ -174,9 +174,9 @@ toggleButton.set_selectedToggleStateIndex(0);
 
 ## Get Selected Toggle State Client-Side
 
-You can obtain the toggle states, selected toggle state and selected toggle state index of **RadRadioButtonList** through the `get_toggleStates()`, `get_selectedToggleState()`, and `get_selectedToggleStateIndex()` methods.
+You can obtain the toggle states, selected toggle state and selected toggle state index of a **RadRadioButtonList** through the `get_toggleStates()`, `get_selectedToggleState()`, and `get_selectedToggleStateIndex()` methods.
 
->caption Example 7: Reference toggle states, selected toggle state and selected toggle state index of **RadRadioButtonList** through its client-side API. 
+>caption Example 7: Reference toggle states, selected toggle state and selected toggle state index of a **RadRadioButtonList** through its client-side API. 
 
 ````JavaScript
 var toggleButton = $find("<%=RadRadioButtonList1.ClientID%>");
